@@ -8,6 +8,7 @@
 
 import UIKit
 import SVGKit
+
 class MapViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
@@ -20,15 +21,7 @@ class MapViewController: UIViewController {
         mapParse.parseMap(resource: "world")
         configUI()
         initEvent()
-//        let nodeList = svg.image.domDocument.getElementsByTagName("path")!
-//        for i in 0...nodeList.length-1 {
-//            let childNodes = (nodeList.item(i) as! SVGElement).childNodes
-//            if childNodes?.length ?? 0 > UInt(0) {
-//                let aaa = childNodes!.item(0)?.childNodes
-//            }
-//            let color = "#"+UIColor.green.toHexString
-//            //            startPoint.setAttribute("fill", value:"6E6E6E")
-//        }
+        mapWorker.changeMapColor(svg: svg)
     }
 
     

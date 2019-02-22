@@ -52,6 +52,7 @@
 		1856CAA62220259100724071 /* TransformAnimatedDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformAnimatedDismiss.swift; sourceTree = "<group>"; };
 		1856CAA82220262C00724071 /* MapPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresentation.swift; sourceTree = "<group>"; };
 		1856CAAA2220288B00724071 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1856CAAC22203D9200724071 /* MapTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		186864FC221D31F000DD90EE /* MapTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186864FF221D31F000DD90EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18686501221D31F000DD90EE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 			children = (
 				18686501221D31F000DD90EE /* MapViewController.swift */,
 				1856CAAA2220288B00724071 /* DetailViewController.swift */,
+				1856CAAC22203D9200724071 /* MapTest-Bridging-Header.h */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -267,6 +269,7 @@
 				TargetAttributes = {
 					186864FB221D31F000DD90EE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					1868650F221D31F300DD90EE = {
 						CreatedOnToolsVersion = 10.1;
@@ -327,7 +330,6 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MapTest/Pods-MapTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/KissXML/KissXML.framework",
 				"${BUILT_PRODUCTS_DIR}/SVGKit/SVGKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -335,7 +337,6 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KissXML.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVGKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +547,7 @@
 			baseConfigurationReference = 55E3495912CD474B7D179E40 /* Pods-MapTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZW36XB2T98;
 				INFOPLIST_FILE = MapTest/Info.plist;
@@ -555,6 +557,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cozhang.demo.MapTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MapTest/ViewController/MapTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -565,6 +569,7 @@
 			baseConfigurationReference = 0BEA9ABE97BCE03CA95A0E45 /* Pods-MapTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZW36XB2T98;
 				INFOPLIST_FILE = MapTest/Info.plist;
@@ -574,6 +579,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cozhang.demo.MapTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MapTest/ViewController/MapTest-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

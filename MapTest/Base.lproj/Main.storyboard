@@ -48,25 +48,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4et-7X-bOs">
-                                <rect key="frame" x="289" y="44" width="56" height="30"/>
+                                <rect key="frame" x="30" y="36" width="315" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancelAction:" destination="8wE-dQ-A3h" eventType="touchUpInside" id="MnO-2k-bQN"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrK-ep-ItO">
-                                <rect key="frame" x="0.0" y="79" width="375" height="588"/>
+                                <rect key="frame" x="0.0" y="71" width="375" height="596"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="MDT-P1-Uni" firstAttribute="trailing" secondItem="mrK-ep-ItO" secondAttribute="trailing" id="2sC-bH-5Ga"/>
-                            <constraint firstItem="4et-7X-bOs" firstAttribute="leading" secondItem="MDT-P1-Uni" secondAttribute="leading" constant="289" id="7Hn-Eh-uOk"/>
+                            <constraint firstItem="4et-7X-bOs" firstAttribute="leading" secondItem="MDT-P1-Uni" secondAttribute="leading" constant="30" id="7Hn-Eh-uOk"/>
                             <constraint firstItem="mrK-ep-ItO" firstAttribute="leading" secondItem="MDT-P1-Uni" secondAttribute="leading" id="9Pr-EJ-T4h"/>
                             <constraint firstItem="mrK-ep-ItO" firstAttribute="top" secondItem="4et-7X-bOs" secondAttribute="bottom" constant="5" id="LVa-Fh-3Y8"/>
                             <constraint firstItem="MDT-P1-Uni" firstAttribute="bottom" secondItem="mrK-ep-ItO" secondAttribute="bottom" id="NQo-X8-Lbp"/>
                             <constraint firstItem="MDT-P1-Uni" firstAttribute="trailing" secondItem="4et-7X-bOs" secondAttribute="trailing" constant="30" id="OlF-RW-Qtf"/>
-                            <constraint firstItem="4et-7X-bOs" firstAttribute="top" secondItem="MDT-P1-Uni" secondAttribute="top" constant="24" id="ofp-3L-lCI"/>
+                            <constraint firstItem="4et-7X-bOs" firstAttribute="top" secondItem="MDT-P1-Uni" secondAttribute="top" constant="16" id="ofp-3L-lCI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MDT-P1-Uni"/>
                     </view>

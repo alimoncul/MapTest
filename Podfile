@@ -5,5 +5,4 @@ target 'MapTest' do
 
   use_frameworks!
     pod 'SVGKit'
-    pod 'KissXML'
 end

@@ -8,15 +8,16 @@
 
 import UIKit
 import SVGKit
-
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     var svg: SVGKFastImageView!
+    var mapWorker = MapWorker()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.transitioningDelegate = self
         configUI()
+        mapWorker.changeMapColor(svg: svg)
     }
 
     func configUI() {
