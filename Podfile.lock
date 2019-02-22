@@ -1,0 +1,26 @@
+PODS:
+  - CocoaLumberjack (3.5.1):
+    - CocoaLumberjack/Core (= 3.5.1)
+  - CocoaLumberjack/Core (3.5.1)
+  - KissXML (5.2.3)
+  - SVGKit (2.1.0):
+    - CocoaLumberjack (~> 3.0)
+
+DEPENDENCIES:
+  - KissXML
+  - SVGKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaLumberjack
+    - KissXML
+    - SVGKit
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 2101f8a5508197a305e737d16c5c2e9e2157628c
+  KissXML: 09f88ff8161fd058d67b70740b8b516687b52823
+  SVGKit: 8a2fc74258bdb2abb54d3b65f3dd68b0277a9c4d
+
+PODFILE CHECKSUM: f37cd343ba5d07db839f6f547815779cdd9491a3
+
+COCOAPODS: 1.5.3
